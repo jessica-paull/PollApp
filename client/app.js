@@ -15,7 +15,7 @@ UI.registerHelper('indexedArray', function(context, options) {
   }
 });
 
-
+/*
 Template.poll.helpers({
   choices: function() {
     var coll = Polls.findOne(this._id);
@@ -23,4 +23,4 @@ Template.poll.helpers({
       return -choice.votes;
     });
   }
-});
+});*/

@@ -12,7 +12,7 @@ Template.poll.events({
     var voteID = $(event.currentTarget).data('id');
 
     // create the incrementing object so we can add to the corresponding vote
-    var voteString = '$.choices.id.' + voteID + '.votes';
+    var voteString = 'choices.' + voteID + '.votes';
     var action = {};
     action[voteString] = 1;
     
@@ -39,12 +39,12 @@ Template.poll.events({
     input.val("");
 
     //generate a new id
-    var id = new Meteor.Collection.ObjectID();
+    //var id = new Meteor.Collection.ObjectID();
 
     Polls.update(
       { _id: pollID },
       { $push: { 
-          choices: { id: id._str, text: name, votes: 1 } 
+          choices: { text: name, votes: 1 } 
       } }
     );
 
