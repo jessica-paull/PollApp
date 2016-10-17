@@ -1,0 +1,14 @@
+<body>
+
+    <div class="page-header text-center">
+        <h1>Cast your vote</h1>
+    </div>
+    
+    <!-- LOOP OVER POLLS AND SHOW EACH -->
+    <div class="polls">
+        {{ #each polls }}
+            {{ >poll }}
+        {{ /each }}
+    </div>
+    
+</body>
