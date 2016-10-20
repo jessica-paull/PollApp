@@ -3,12 +3,43 @@
     <div class="page-header text-center">
         <h1>Cast your vote</h1>
     </div>
-    
-    <!-- LOOP OVER POLLS AND SHOW EACH -->
-    <div class="polls">
-        {{ #each polls }}
-            {{ >poll }}
+
+    <div class="poll well well-lg">
+
+    	<h3 class="text-center">Who had the best costume?</h3>
+
+    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
+    	{{ #each choices }}
+            {{ >choice }}
         {{ /each }}
+
+        <div class="form-group question-group">
+	        <input type="text" name="new-person" class="new-person form-control" placeholder="Your Vote">
+	        <button class="btn btn-lg btn-success btn-block add-person">Add New Person</button>
+	    </div>
+
     </div>
-    
+
+    <div class="modal fade" id="confirm-vote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body">
+	                Your vote has been cast, thanks!
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="poll results well well-lg">
+
+		<!-- LOOP OVER CHOICES AND SHOW EACH -->
+    	{{ #each choices }}
+            {{ >results }}
+        {{ /each }}
+
+	</div>
+
 </body>
