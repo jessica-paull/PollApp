@@ -1,26 +1,47 @@
 <body>
 
-    <div class="page-header text-center">
-        <h1>Cast your vote</h1>
-    </div>
+	<div class="poll-wrapper">
 
-    <div class="poll well well-lg">
-
-    	<h3 class="text-center">Who had the best costume?</h3>
-
-    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
-    	{{ #each choices }}
-            {{ >choice }}
-        {{ /each }}
-
-        <div class="form-group question-group">
-	        <input type="text" name="new-person" class="new-person form-control" placeholder="Your Vote">
-	        <button class="btn btn-lg btn-success btn-block add-person">Add New Person</button>
+	    <div class="text-center">
+	        <h1>Who had tonight's best costume?</h1>
 	    </div>
 
-    </div>
+	    <div class="poll well well-lg">
 
-    <div class="modal fade" id="confirm-vote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
+	    	{{ #each choices }}
+	            {{ >choice }}
+	        {{ /each }}
+
+	        <div class="form-group writein-group">
+		        <input type="text" name="new-person" class="new-person form-control" placeholder="Write-in a new costume">
+		        <button class="btn btn-sm btn-primary pull-right add-person">Add</button>
+		    </div>
+
+	    </div>
+
+	    <div class="counter">
+	    	<span class="js-countdown"></span>
+	    	<span>to go</span>
+	    </div> 
+
+	</div>
+
+	<div class="results-wrapper">
+		<div class="text-center">
+	        <h1>The results are in..</h1>
+	    </div>
+		<div class="results well well-lg">
+
+			<!-- LOOP OVER CHOICES AND SHOW EACH -->
+	    	{{ #each choices }}
+	            {{ >results }}
+	        {{ /each }}
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="confirm-vote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	    <div class="modal-dialog">
 	        <div class="modal-content">
 	            <div class="modal-body">
@@ -31,15 +52,6 @@
 	            </div>
 	        </div>
 	    </div>
-	</div>
-
-	<div class="poll results well well-lg">
-
-		<!-- LOOP OVER CHOICES AND SHOW EACH -->
-    	{{ #each choices }}
-            {{ >results }}
-        {{ /each }}
-
 	</div>
 
 </body>

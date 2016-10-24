@@ -1,7 +1,30 @@
+Meteor.startup(function() {
+
+  Session.set("sort_by", "name");  
+
+  $.getScript('vendor\jquery.countdown.js');
+
+  $(".js-countdown").countdown("2016/10/30", function(event) {
+    $(this).text(
+    event.strftime('%D days %H hours %M minutes %S seconds'));
+  }).on('finish.countdown', function() {
+    $("results-wrapper").show();
+    $("poll-wrapper").hide();
+    Session.set("sort_by", "results");  
+  });
+
+}); 
+
 Template.body.helpers({
   
   choices: function() {
-    return Choices.find({}, {sort: {votes: -1}});
+    var sort = Session.get("sort_by");
+    if (sort === "results"){
+       return Choices.find({}, {sort: {votes: -1}});
+    } else {
+       return Choices.find({}, {sort: {text: -1}});
+    }
+    
   }
 
 });

@@ -1,7 +1,46 @@
-body 	{
+body {
+	background: #000;
 	padding-top: 50px; 
 }
-.poll 	{
-	width: 25%;
+h1 {
+    font-family: 'Eater', cursive;
+    color: #d98c00;
+}
+.well {
+    background-color: #d98c00;
+    border-color: #d28904;
+
+}
+.btn-primary, .results-wrapper .btn-primary:hover {
+    background-color: #282828;
+    border-color: #3b3b3b;
+    cursor: default;
+}
+.btn-primary:hover {
+    background-color: #3b3b3b;
+    border-color: #3b3b3b;
+    cursor: pointer;
+}
+.writein-group {
+    margin-top: 25px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.writein-group .btn {
+    margin-top: 5px;
+}
+.poll, .results {
+	width: 300px;
 	margin: 20px auto;
+}
+.results-wrapper {
+    display: none;
+}
+.counter {
+    text-align: center;
+    color: #d98c00; /* orange */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400
 }
