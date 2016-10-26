@@ -4,7 +4,7 @@ Meteor.startup(function() {
 
   $.getScript("vendor\jquery.countdown.js");
 
-  $(".js-countdown").countdown("2016/10/25 21:34:59", function(event) {
+  $(".js-countdown").countdown("2016/10/30", function(event) {
     $(this).text(
     event.strftime("%D days %H hours %M minutes %S seconds"));
   }).on("finish.countdown", function() {
