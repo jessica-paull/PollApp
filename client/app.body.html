@@ -6,6 +6,11 @@
 	        <h1>Who had tonight's best costume?</h1>
 	    </div>
 
+	    <div class="counter">
+	    	<span class="js-countdown"></span>
+	    	<span>to go</span>
+	    </div> 
+
 	    <div class="poll well well-lg">
 
 	    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
@@ -14,16 +19,17 @@
 	        {{ /each }}
 
 	        <div class="form-group writein-group">
-		        <input type="text" name="new-person" class="new-person form-control" placeholder="Write-in a new costume">
-		        <button class="btn btn-sm btn-primary pull-right add-person">Add</button>
+	        	<div class="row">
+	        		<div class="col-sm-10">
+	        			<input type="text" name="new-person" class="new-person form-control" placeholder="Write-in someone new">
+	        		</div>
+	        		<div class="col-sm-2">
+	        			<button class="btn btn-sm btn-primary pull-right add-person">+</button>
+	        		</div>
+	        	</div>		     
 		    </div>
 
 	    </div>
-
-	    <div class="counter">
-	    	<span class="js-countdown"></span>
-	    	<span>to go</span>
-	    </div> 
 
 	</div>
 

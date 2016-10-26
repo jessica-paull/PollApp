@@ -1,1 +1,1 @@
-Choices = new Mongo.Collection('choices');
+Choices = new Mongo.Collection("choices");
