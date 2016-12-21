@@ -30,9 +30,127 @@ body {
 .halloween-theme-item {
   display: none; }
 
+.christmas-theme-item {
+  display: none; }
+
 .christmas-body {
   background: green; }
-
+  .christmas-body .christmas-theme-item {
+    display: block; }
+  .christmas-body .counter {
+    color: white; }
+  .christmas-body h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    color: white;
+    margin-top: 65px; }
+  .christmas-body .lightrope {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    margin: -15px 0 0 0;
+    padding: 0;
+    pointer-events: none;
+    width: 100%; }
+    .christmas-body .lightrope li {
+      position: relative;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 12px;
+      height: 28px;
+      border-radius: 50%;
+      margin: 20px;
+      display: inline-block;
+      background: #e20808;
+      box-shadow: 0px 4.66667px 24px 3px #e20808;
+      animation-name: flash-1;
+      animation-duration: 2s; }
+      .christmas-body .lightrope li:nth-child(2n+1) {
+        background: #26b92b;
+        box-shadow: 0px 4.66667px 24px 3px rgba(38, 185, 43, 0.5);
+        animation-name: flash-2;
+        animation-duration: 0.4s; }
+      .christmas-body .lightrope li:nth-child(4n+2) {
+        background: #1732ba;
+        box-shadow: 0px 4.66667px 24px 3px #1732ba;
+        animation-name: flash-3;
+        animation-duration: 1.1s; }
+      .christmas-body .lightrope li:nth-child(6n+3) {
+        background: #dede15;
+        box-shadow: 0px 4.66667px 24px 3px #dede15;
+        animation-name: flash-4;
+        animation-duration: 1.1s; }
+      .christmas-body .lightrope li:nth-child(8n+3) {
+        background: #de8015;
+        box-shadow: 0px 4.66667px 24px 3px #de8015;
+        animation-name: flash-5;
+        animation-duration: 1.1s; }
+      .christmas-body .lightrope li:nth-child(odd) {
+        animation-duration: 1.8s; }
+      .christmas-body .lightrope li:nth-child(3n+1) {
+        animation-duration: 1.4s; }
+      .christmas-body .lightrope li:before {
+        content: "";
+        position: absolute;
+        background: #222;
+        width: 10px;
+        height: 9.33333px;
+        border-radius: 3px;
+        top: -4.66667px;
+        left: 1px; }
+      .christmas-body .lightrope li:after {
+        content: "";
+        top: -14px;
+        left: 9px;
+        position: absolute;
+        width: 52px;
+        height: 18.66667px;
+        border-bottom: solid #222 2px;
+        border-radius: 50%; }
+      .christmas-body .lightrope li:last-child:after {
+        content: none; }
+      .christmas-body .lightrope li:first-child {
+        margin-left: -40px; }
+@keyframes flash-1 {
+  0%, 100% {
+    background: #e20808;
+    box-shadow: 0px 4.66667px 24px 3px #e20808; }
+  50% {
+    background: rgba(226, 8, 8, 0.4);
+    box-shadow: 0px 4.66667px 24px 3px rgba(226, 8, 8, 0.2); } }
+@keyframes flash-2 {
+  0%, 100% {
+    background: #26b92b;
+    box-shadow: 0px 4.66667px 24px 3px #26b92b; }
+  50% {
+    background: rgba(38, 185, 43, 0.4);
+    box-shadow: 0px 4.66667px 24px 3px rgba(38, 185, 43, 0.2); } }
+@keyframes flash-3 {
+  0%, 100% {
+    background: #1732ba;
+    box-shadow: 0px 4.66667px 24px 3px #1732ba; }
+  50% {
+    background: rgba(23, 50, 186, 0.4);
+    box-shadow: 0px 4.66667px 24px 3px rgba(23, 50, 186, 0.2); } }
+@keyframes flash-4 {
+  0%, 100% {
+    background: #dede15;
+    box-shadow: 0px 4.66667px 24px 3px #dede15; }
+  50% {
+    background: rgba(222, 222, 21, 0.4);
+    box-shadow: 0px 4.66667px 24px 3px rgba(222, 222, 21, 0.2); } }
+@keyframes flash-5 {
+  0%, 100% {
+    background: #de8015;
+    box-shadow: 0px 4.66667px 24px 3px #de8015; }
+  50% {
+    background: rgba(222, 128, 21, 0.4);
+    box-shadow: 0px 4.66667px 24px 3px rgba(222, 128, 21, 0.2); } }
 .halloween-body {
   background: #222222;
   padding-top: 100px; }

@@ -3,6 +3,7 @@ Meteor.startup(function() {
   Session.set('sort_by', 'name');  
 
   $.getScript('vendor\jquery.countdown.js');
+  $.getScript('vendor\snow.js');
 
   $('.js-countdown').countdown('2016/12/24 17:00:00', function(event) {
     $(this).text(
