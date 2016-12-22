@@ -49,7 +49,7 @@ body {
   .christmas-body h1 {
     font-family: 'Mountains of Christmas', cursive;
     color: #ec1b24;
-    margin-top: 65px; }
+    margin-top: 75px; }
   .christmas-body .btn-primary:hover, .christmas-body .btn-primary:focus, .christmas-body .btn-primary.focus, .christmas-body .btn-primary:active, .christmas-body .btn-primary.active, .christmas-body .open > .dropdown-toggle.btn-primary,
   .christmas-body .btn-primary, .christmas-body .results-wrapper .btn-primary:hover {
     background-color: #7cbd30;

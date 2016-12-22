@@ -104,14 +104,14 @@
                 /*fontFamily: 'Wingdings',*/
                 color: '#eee',
                 display: 'block',
-                position: 'fixed',
+                position: 'absolute',
                 background: 'transparent',
                 width: 'auto',
                 height: 'auto',
                 margin: '0',
                 padding: '0',
                 textAlign: 'left',
-                zIndex: 8
+                zIndex: -1
             }
         );
         
