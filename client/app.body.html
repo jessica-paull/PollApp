@@ -1,9 +1,8 @@
 <body>
 
 	<select class="select-mode">
-		<option></option>
-		<option>Halloween</option>
 		<option>Christmas</option>
+		<option>Halloween</option>
 	</select>
 
 	<div class="spider-wrap halloween-theme-item">
@@ -79,12 +78,7 @@
 
 	    <div class="poll well well-lg">
 
-	    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
-	    	{{ #each choices }}
-	            {{ >choice }}
-	        {{ /each }}
-
-	        <div class="form-group writein-group">
+	    	<div class="form-group writein-group">
 	        	<div class="row">
 	        		<div class="col-xs-10">
 	        			<input type="text" name="new-person" class="new-person form-control" placeholder="Write-in someone new">
@@ -94,6 +88,11 @@
 	        		</div>
 	        	</div>		     
 		    </div>
+
+	    	<!-- LOOP OVER CHOICES AND SHOW EACH -->
+	    	{{ #each choices }}
+	            {{ >choice }}
+	        {{ /each }}
 
 	    </div>
 

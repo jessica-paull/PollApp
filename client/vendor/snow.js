@@ -80,7 +80,7 @@
                     textShadow: '9999px 0 2px #eee'
                 },
                 v: 6
-            },
+            },/*
             {
                 r: 0.2,
                 css: {
@@ -88,7 +88,7 @@
                     textShadow: '9999px 0 6px #eee'
                 },
                 v: 12
-            }/*,
+            },
             {
                 r: 0.1,
                 css: {
@@ -111,7 +111,7 @@
                 margin: '0',
                 padding: '0',
                 textAlign: 'left',
-                zIndex: 9
+                zIndex: 8
             }
         );
         

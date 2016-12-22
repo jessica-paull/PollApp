@@ -13,8 +13,8 @@ body {
   font-size: 16px;
 }
 .writein-group {
-    margin-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
+    margin-top: 0;
     overflow: hidden;
 }
 .writein-group .btn {
@@ -33,23 +33,43 @@ body {
 .christmas-theme-item {
   display: none;
 }
+.winternetz {
+  display: none;
+}
 .christmas-body {
-  background: green;
+  background: rgb(176,212,226);
   $globe-width:   12px;
   $globe-height:  28px;
   $globe-spacing: 40px;
   $globe-spread: 3px;
   $light-off-opacity: 0.4;
   .christmas-theme-item {
-    display: block;
+    display: block !important;
+  }
+  .winternetz {
+    display: block !important;
+  }
+  .halloween-theme-item {
+    display: none !important;
   }
   .counter {
-    color: white;
+    color: #286090;
   }
   h1 {
     font-family: 'Mountains of Christmas', cursive;
-    color: white;
+    color: rgb(236,27,36);
     margin-top: 65px;
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary,
+  .btn-primary, .results-wrapper .btn-primary:hover {
+      background-color: rgb(124,189,48);
+      border-color: rgb(124,189,48);
+      cursor: default;
+  }
+  .btn-primary:hover {
+      background-color: rgb(124,189,48);
+      border-color: rgb(124,189,48);
+      cursor: pointer;
   }
   .lightrope {
     text-align: center;
@@ -171,7 +191,13 @@ body {
   background: #222222;
   padding-top: 100px; 
   .halloween-theme-item {
-    display: block;
+    display: block !important;
+  }
+  .christmas-theme-item {
+    display: none !important;
+  }
+  .winternetz {
+    display: none !important;
   }
   h1 {
     font-family: 'Eater', cursive;

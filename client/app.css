@@ -13,8 +13,8 @@ body {
   font-size: 16px; }
 
 .writein-group {
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
+  margin-top: 0;
   overflow: hidden; }
 
 .writein-group .btn {
@@ -33,16 +33,32 @@ body {
 .christmas-theme-item {
   display: none; }
 
+.winternetz {
+  display: none; }
+
 .christmas-body {
-  background: green; }
+  background: #b0d4e2; }
   .christmas-body .christmas-theme-item {
-    display: block; }
+    display: block !important; }
+  .christmas-body .winternetz {
+    display: block !important; }
+  .christmas-body .halloween-theme-item {
+    display: none !important; }
   .christmas-body .counter {
-    color: white; }
+    color: #286090; }
   .christmas-body h1 {
     font-family: 'Mountains of Christmas', cursive;
-    color: white;
+    color: #ec1b24;
     margin-top: 65px; }
+  .christmas-body .btn-primary:hover, .christmas-body .btn-primary:focus, .christmas-body .btn-primary.focus, .christmas-body .btn-primary:active, .christmas-body .btn-primary.active, .christmas-body .open > .dropdown-toggle.btn-primary,
+  .christmas-body .btn-primary, .christmas-body .results-wrapper .btn-primary:hover {
+    background-color: #7cbd30;
+    border-color: #7cbd30;
+    cursor: default; }
+  .christmas-body .btn-primary:hover {
+    background-color: #7cbd30;
+    border-color: #7cbd30;
+    cursor: pointer; }
   .christmas-body .lightrope {
     text-align: center;
     white-space: nowrap;
@@ -155,7 +171,11 @@ body {
   background: #222222;
   padding-top: 100px; }
   .halloween-body .halloween-theme-item {
-    display: block; }
+    display: block !important; }
+  .halloween-body .christmas-theme-item {
+    display: none !important; }
+  .halloween-body .winternetz {
+    display: none !important; }
   .halloween-body h1 {
     font-family: 'Eater', cursive;
     color: #ff9a00; }
