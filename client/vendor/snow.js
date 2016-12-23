@@ -160,7 +160,7 @@
         $nowflake.data('v', v);
         $nowflake.data('half_v', Math.round(v * 0.5));
         
-        $('.christmas-body').append($nowflake);
+        $('.christmas-body .snowflake-container').append($nowflake);
     }
     
     function move()

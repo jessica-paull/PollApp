@@ -1,10 +1,9 @@
 html,
 body {
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .select-mode {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0; }
 
@@ -33,14 +32,21 @@ body {
 .christmas-theme-item {
   display: none; }
 
-.winternetz {
-  display: none; }
+.snowflake-container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1; }
 
 .christmas-body {
   background: #b0d4e2; }
   .christmas-body .christmas-theme-item {
     display: block !important; }
-  .christmas-body .winternetz {
+  .christmas-body .snowflake-container {
     display: block !important; }
   .christmas-body .halloween-theme-item {
     display: none !important; }
@@ -68,7 +74,8 @@ body {
     margin: -15px 0 0 0;
     padding: 0;
     pointer-events: none;
-    width: 100%; }
+    width: 100%;
+    top: 10px; }
     .christmas-body .lightrope li {
       position: relative;
       animation-fill-mode: both;
@@ -174,7 +181,7 @@ body {
     display: block !important; }
   .halloween-body .christmas-theme-item {
     display: none !important; }
-  .halloween-body .winternetz {
+  .halloween-body .snowflake-container {
     display: none !important; }
   .halloween-body h1 {
     font-family: 'Eater', cursive;

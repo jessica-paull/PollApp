@@ -1,10 +1,9 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
 }
 .select-mode {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -33,8 +32,15 @@ body {
 .christmas-theme-item {
   display: none;
 }
-.winternetz {
+.snowflake-container {
   display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 .christmas-body {
   background: rgb(176,212,226);
@@ -46,7 +52,7 @@ body {
   .christmas-theme-item {
     display: block !important;
   }
-  .winternetz {
+  .snowflake-container {
     display: block !important;
   }
   .halloween-theme-item {
@@ -81,6 +87,7 @@ body {
     padding: 0;
     pointer-events: none;
     width: 100%;
+    top: 10px;
     li {
       position: relative;
       animation-fill-mode: both; 
@@ -196,7 +203,7 @@ body {
   .christmas-theme-item {
     display: none !important;
   }
-  .winternetz {
+  .snowflake-container {
     display: none !important;
   }
   h1 {
